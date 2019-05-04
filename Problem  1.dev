@@ -1,82 +1,37 @@
-[Project]
-FileName=Problem  1.dev
-Name=Problem  1
-Type=1
-Ver=2
-ObjFiles=
-Includes=
-Libs=
-PrivateResource=
-ResourceIncludes=
-MakeIncludes=
-Compiler=
-CppCompiler=
-Linker=
-IsCpp=1
-Icon=
-ExeOutput=
-ObjectOutput=
-LogOutput=
-LogOutputEnabled=0
-OverrideOutput=0
-OverrideOutputName=
-HostApplication=
-UseCustomMakefile=0
-CustomMakefile=
-CommandLine=
-Folders=
-IncludeVersionInfo=0
-SupportXPThemes=0
-CompilerSet=0
-CompilerSettings=0000000000000000000000000
-UnitCount=3
+#include <iostream>
+#include <conio.h>
+#include <string>
 
-[VersionInfo]
-Major=1
-Minor=0
-Release=0
-Build=0
-LanguageID=1033
-CharsetID=1252
-CompanyName=
-FileVersion=
-FileDescription=Developed using the Dev-C++ IDE
-InternalName=
-LegalCopyright=
-LegalTrademarks=
-OriginalFilename=
-ProductName=
-ProductVersion=
-AutoIncBuildNr=0
-SyncProduct=1
+using namespace std;
 
-[Unit1]
-FileName=Problem 1
-CompileCpp=1
-Folder=
-Compile=1
-Link=1
-Priority=1000
-OverrideBuildCmd=0
-BuildCmd=
-
-[Unit2]
-FileName=Problem 2.cpp
-CompileCpp=1
-Folder=
-Compile=1
-Link=1
-Priority=1000
-OverrideBuildCmd=0
-BuildCmd=
-
-[Unit3]
-FileName=PROBLEM 1 new.cpp
-CompileCpp=1
-Folder=
-Compile=1
-Link=1
-Priority=1000
-OverrideBuildCmd=0
-BuildCmd=
-
+int main()
+{	float Hour, OfferA , OfferB;
+	int b;
+	 
+	cout << "Please Enter Your Package" << endl;
+	cout << "1 for A, 2 for B, 3 for C" << endl;
+	cin >> b;
+	cout << "Please Enter Your Usage in hours" << endl;
+	cin >> Hour;
+	
+	OfferA = (Hour * 20) + 995;
+	OfferB = (Hour * 10) + 1495;
+	
+		if (b==1)
+		
+		cout << OfferA<< "/" << "Month" << enl;
+		
+		else if (b==2)
+		
+		cout << OfferB<< "/" << "Month" << endl;
+		
+		else if (b==3)
+		
+		cout << "1995/month, no additional fees" << endl;
+		
+		else 
+		
+		cout << "Invalid" << endl;
+		
+		return 0;
+}
